@@ -1,0 +1,50 @@
+tapsirig n13:
+
+soz=input("Soz daxil et:")
+say=0
+
+for herf in soz:
+    if herf=="a":
+        say+=1
+
+print("a herfinin sayi:", say)
+
+tapsirig n14:
+
+username=input("Username daxil et:")
+
+if len(username)<5:
+    print("Username qisadir")
+else:
+    print("Username qebul edildi")
+
+tapsirig n15:
+
+secret=7
+
+eded=int(input("Ededi tap:"))
+
+while eded!=secret:
+    if eded>secret:
+        print("Eded boyukdur")
+    else:
+        print("Eded kicikdir")
+print("Duz tapdin!")
+
+tapsirig n16:
+?
+
+tapsirig n17:
+
+soz=input("Soz daxil et:")
+say=soz.count("a")
+print("a herfinin sayi:",say)
+
+tapsirig n18:
+
+cumle=input("Cumle daxil et:")
+new= cumle.replace(" ", "-")
+print(new)
+
+
+
