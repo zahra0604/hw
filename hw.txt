@@ -1,50 +1,104 @@
-tapsirig n13:
+tapsirig n1:
 
-soz=input("Soz daxil et:")
-say=0
+sport={"futbol","tennis","voleybol","futbol","basketbol"}
 
-for herf in soz:
-    if herf=="a":
-        say+=1
+sport.add("uzguculuk")
+print(sport)
+sport.remove("tennis")
+print(sport)
+sport.discard("gulesh")
+print(sport)
 
-print("a herfinin sayi:", say)
+tapsirig n2:
 
-tapsirig n14:
-
-username=input("Username daxil et:")
-
-if len(username)<5:
-    print("Username qisadir")
+magaza={"monitor","keyboard","mous","micrafon","USB"}
+mehsul=input("istediyiviz eshyani daxil edin:")
+if mehsul in magaza:
+    print("bu mehsul var")
 else:
-    print("Username qebul edildi")
+    print("bu mehsul yoxdu")
 
-tapsirig n15:
+tapsirig n3:
 
-secret=7
+ededler={1, 2, 3}
+ededler.add([10, 20])
+print(ededler)
 
-eded=int(input("Ededi tap:"))
+ededler={1, 2, 3}
+ededler.add((10, 20))
+print(ededler)
 
-while eded!=secret:
-    if eded>secret:
-        print("Eded boyukdur")
-    else:
-        print("Eded kicikdir")
-print("Duz tapdin!")
+ededler={1, 2, 3}
+ededler.add(100)
+print(ededler)
 
-tapsirig n16:
-?
+tapsirig n4:
 
-tapsirig n17:
+library1=frozenset([101, 102, 103, 104])
+library2=frozenset([103, 104, 105, 106])
+all_members=library1.union(library2)
+print(all_members)
 
-soz=input("Soz daxil et:")
-say=soz.count("a")
-print("a herfinin sayi:",say)
+tapsirig n5:
 
-tapsirig n18:
+mashin={
+    "marks":"BMW",
+    "Model":"M3",
+    "istehsal ili":2025,
+    "reng":"Gara"
+}
+print(mashin)
+mashin["reng"]="red"
+print(mashin)
 
-cumle=input("Cumle daxil et:")
-new= cumle.replace(" ", "-")
-print(new)
+tapsirig n6:
+
+inventory = {
+    "qılınc":1,
+    "qalxan":2,
+    "iksir":5
+}
+inventory.update({"ox": 20})
+print(inventory)
+inventory.pop("iksir")
+print(inventory)
+
+tapsirig n7:
+
+cities={
+    "Bakı":2200000,
+    "Gəncə":330000,
+    "Sumqayıt":350000,
+    "Şəki":68000,
+    "Lənkəran":90000
+}
+for city,population in cities.items():
+    if population>100000:
+        print(city)
+
+tapsirig n8:
+
+salaries={
+    "Rauf":800,
+    "Nigar":1200,
+    "Tural":950,
+    "Aynur":1500
+}
+
+salary_list=list(salaries.values())
+
+i=0
+total=0
+
+while i<len(salary_list):
+    total+=salary_list[i]
+    i+=1
+
+print("Ümumi məbləğ:", total)
+
+
+
+
 
 
 
