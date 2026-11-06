@@ -1,109 +1,132 @@
-tapsirig 1:
+1ci tapsirig:
 
-telebeler={
-    "telebe1":{
-        "ad":"Murad",
-        "bal":85
-    },
-    "telebe2":{
-        "ad":"Aysel",
-        "bal":45
-    },
-    "telebe3":{
-        "ad":"Mehdi",
-        "bal":70
-    },
-    "telebe4":{
-        "ad":"Leyla",
-        "bal":90
-    }
-}
 
-tapsirig 2:
 
-for telebe in telebeler.values():
-    if telebe["ad"][0] == "M":
-        print(telebe["ad"])
+number=int(input("enter number"))
 
-tapsirig 3:
+result=number*3
 
-for telebe in telebeler.values():
-    if telebe["bal"]>=50:
+print(result)
 
-tapsirig 4:
 
-for telebe in telebeler.values():
-    if telebe["bal"]>70:
-        print(telebe["ad"])
 
-tapsirig 5:
+2ci tapsirig;
 
-for telebe in telebeler.values():
-    if telebe["bal"]<60:
-       telebe["bal"]+=10
-print(telebe["ad"], telebe["bal"])
 
-tapsirig 6:
 
-mehsullar={
-    "telefon":{"qiymet": 1200},
-    "laptop":{"qiymet": 2500},
-    "qulaqliq":{"qiymet": 150},
-    "planset":{"qiymet": 800}
-}
-en_bahali=0
-for mehsul in mehsullar:
-    if mehsullar[mehsul]["qiymet"]>en_bahali:
-        en_bahali=mehsullar[mehsul]["qiymet"]
-        ad=mehsul
-print(ad,en_bahali)
-        print(telebe["ad"],"kecdi")
+def yoxla(number):
+
+    if number > 0:
+
+        return "Müsbət"
+
+    elif number < 0:
+
+        return "Mənfi"
+
     else:
-        print(telebe["ad"],"kesildi")
 
-tapsirig 7:
+        return "Sıfır"
 
-oyuncular ={
-    "Murad":{"xal": 80},
-    "Aysel":{"xal": 45},
-    "Leyla":{"xal": 90},
-    "Mehdi":{"xal": 30}
-}
-en_az=100000
-for oyuncu in oyuncular:
-    if oyuncular[oyuncu]["xal"]<en_az:
-        en_az = oyuncular[oyuncu]["xal"]
-        ad = oyuncu
-print(ad,en_az)
+eded = int(input("Ədəd daxil edin: "))
 
-tapsirig 8:
-
-for mehsul in mehsullar.values():
-    if mehsul["qiymet"]>100:
-        mehsul["qiymet"]-=15
-    print(mehsul["qiymet"])
-
-tapsirig 9:
-
-siyahi=list(telebeler.values())
-i = 0
-while i<len(siyahi):
-    if siyahi[i]["bal"]>=80:
-        print(siyahi[i]["ad"],siyahi[i]["bal"])
-    i += 1
-
-tapsirig 10:
-
-siyahi=list(mehsullar.items())
-i=0
-en_bahali=siyahi[0]
-while i<len(siyahi):
-    if siyahi[i][1]["qiymet"]>en_bahali[1]["qiymet"]:
-        en_bahali=siyahi[i]
-    i += 1
-print(en_bahali[0],en_bahali[1]["qiymet"])
+print(yoxla(eded))
 
 
+
+3cu tapsirig:
+
+
+
+def azalan(number):
+
+    numbers = []
+
+    i = number
+
+    while i >= 1:
+
+        numbers.append(i)
+
+        i -= 1
+
+        return numbers
+
+num = int(input("Enter a number: "))
+
+print(azalan(num))
+
+
+
+4cu tapsirig:
+
+
+
+def sum_numbers(n):
+
+    total = 0
+
+    i = 1
+
+    while i <= n:
+
+        if i % 3 == 0:
+
+            total += i
+
+        i += 1
+
+    return total
+
+number = int(input("Enter a number: "))
+
+print(sum_numbers(number))
+
+
+
+5ci tapsirig:
+
+
+
+def smallest(numbers):
+
+    smallest_number = numbers[0]
+
+    for number in numbers:
+
+        if number < smallest_number:
+
+            smallest_number = number
+
+    return smallest_number
+
+my_list = [8, 3, 12, 1, 6]
+
+print(smallest(my_list
+
+
+
+6ci tapsirig:
+
+
+
+def factorial(n):
+
+    result = 1
+
+    i = 1
+
+    while i <= n:
+
+        result *= i
+
+        i += 1
+
+    return result
+
+number = int(input("Enter a number: "))
+
+print(factorial(number))
 
 
 
