@@ -1,133 +1,77 @@
-1ci tapsirig:
+1ci:
+
+
+
+def values(length, width):
+
+    return length * width
+
+length = int(input("Enter the length: "))
+
+width = int(input("Enter the width: "))
+
+print(values(length, width))
+
+
+
+
+
+2ci:
 
 
 
 number=int(input("enter number"))
 
-result=number*3
+def values(number):
 
-print(result)
+for num in number:
 
+     if number%2==0:
 
+         return "number is even"
 
-2ci tapsirig;
+     else:
 
+         return "number is odd"
 
-
-def yoxla(number):
-
-    if number > 0:
-
-        return "Müsbət"
-
-    elif number < 0:
-
-        return "Mənfi"
-
-    else:
-
-        return "Sıfır"
-
-eded = int(input("Ədəd daxil edin: "))
-
-print(yoxla(eded))
+print(values(number)
 
 
 
-3cu tapsirig:
+3cu:
 
 
 
-def azalan(number):
+price=int(input("enter the price"))
 
-    numbers = []
+amount=int(input("enter amount of the object"))
 
-    i = number
+def value(price,amount=1):
 
-    while i >= 1:
-
-        numbers.append(i)
-
-        i -= 1
-
-        return numbers
-
-num = int(input("Enter a number: "))
-
-print(azalan(num))
-
-
-
-4cu tapsirig:
-
-
-
-def sum_numbers(n):
-
-    total = 0
-
-    i = 1
-
-    while i <= n:
-
-        if i % 3 == 0:
-
-            total += i
-
-        i += 1
+    total=amount * price
 
     return total
 
-number = int(input("Enter a number: "))
-
-print(sum_numbers(number))
+print(value(price,amount))
 
 
 
-5ci tapsirig:
+4cu:
 
 
 
-def smallest(numbers):
+def number(*args):
 
-    smallest_number = numbers[0]
+total=1
 
-    for number in numbers:
+for multp in args:
 
-        if number < smallest_number:
+        total *= multp
 
-            smallest_number = number
-
-    return smallest_number
-
-my_list = [8, 3, 12, 1, 6]
-
-print(smallest(my_list
+         Return
 
 
 
-6ci tapsirig:
-
-
-
-def factorial(n):
-
-    result = 1
-
-    i = 1
-
-    while i <= n:
-
-        result *= i
-
-        i += 1
-
-    return result
-
-number = int(input("Enter a number: "))
-
-print(factorial(number))
-
-
+5ci:
 
 
